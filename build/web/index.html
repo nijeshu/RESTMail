@@ -1,0 +1,41 @@
+<html>
+    <head>
+        <title>Mail Application</title>
+        <link href="mail.css" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+        <div id="login_div">
+            <p><span class="prompt">User name:</span><input type="text" id="user_field"/></p>
+            <p><span class="prompt">Password:</span><input type="password" id="password_field"/></p>
+            <div class="button-bar"><button id="login_button">Log In</button></div>
+        </div>
+        <div id="main_div">
+            <ul id="handles"></ul>
+            <div class="button-bar">
+                <button id="read_button">Read</button>
+                <button id="compose_button">Compose</button>
+            </div>
+        </div>
+        <div id="read_div">
+            <p><textarea id="body_area"></textarea></p>
+            <div class="button-bar">
+                <button id="close_button">Close</button>
+                <button id="delete_button">Delete</button>
+            </div>
+        </div>
+        <div id="compose_div">
+            <p><span class="prompt">Subject:</span><input type="text" id="subject_field"/></p>
+            <p><span class="prompt">To:</span><input type="text" id="recipients_field"/></p>
+            <p><textarea id="content_area"></textarea></p>
+            <div class="button-bar">
+                <button id="send_button">Send</button>
+                <button id="cancel_button">Cancel</button>
+            </div>
+        </div>
+        
+    <!-- Since our script will depend on JQuery, we load JQuery first. -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="mail.js"></script>
+
+    </body>
+</html>
